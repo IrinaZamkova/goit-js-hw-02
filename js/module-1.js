@@ -1,8 +1,7 @@
-
-const logItems = function (items) {
-  for (const item of items) {
-    let numberItem = items.indexOf(item) + 1 + "-" + item;
-
+"use strict";
+const logItems = function (array) {
+  for (const item of array) {
+    let numberItem = array.indexOf(item) + 1 + "-" + item;
     console.log(numberItem);
   }
 };
