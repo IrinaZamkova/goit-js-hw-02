@@ -1,14 +1,7 @@
 "use strict";
 
 const formatString = function (string) {
-  const words = string.split("");
-  if (words.length > 40) {
-    words.splice(39);
-    words.push("...");
-  }
-  let newString = words.join("");
-
-  return newString;
+  return string.length <= 40 ? string : string.slice(0, 40) + "...";
 };
 
 console.log(formatString("Curabitur ligula sapien, tincidunt non."));
