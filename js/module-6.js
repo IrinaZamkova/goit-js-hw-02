@@ -19,7 +19,7 @@ do {
   }
 } while (input !== null);
 {
-  if (numbers.length > 0) {
+  if (numbers.length) {
     console.log("The total amount of numbers is" + " " + add(numbers));
   }
 }
